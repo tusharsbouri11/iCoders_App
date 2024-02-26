@@ -26,7 +26,7 @@ public class profileModel {
     }
 
     public String getLink() {
-        return desig;
+        return link;
     }
 
     public void setImg(int img) {

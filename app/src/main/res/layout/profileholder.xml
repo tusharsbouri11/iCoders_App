@@ -59,8 +59,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Connect on LinkedIn"
-                    android:textSize="@dimen/_16ssp"
-                    android:textColor="@color/black"/>
+                    android:textColor="#007AB9"
+                    android:textSize="@dimen/_16ssp" />
 
             </LinearLayout>
 

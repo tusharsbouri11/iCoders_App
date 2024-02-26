@@ -44,14 +44,14 @@ public class recyclerProfileAdapter extends RecyclerView.Adapter<recyclerProfile
             @Override
             public void onClick(View view) {
                 Uri uri= Uri.parse(arrProfile.get(position).getLink());
-//                context.startActivity(new Intent(Intent.ACTION_VIEW, uri));
-                Intent intent=new Intent(Intent.ACTION_VIEW, uri);
-                if (intent.resolveActivity(context.getPackageManager()) != null) {
-                    context.startActivity(intent);
-                } else {
-                    // Handle case where no app can handle the intent
-                    Toast.makeText(context, "No app available", Toast.LENGTH_SHORT).show();
-                }
+                context.startActivity(new Intent(Intent.ACTION_VIEW, uri));
+//                Intent intent=new Intent(Intent.ACTION_VIEW, uri);
+//                if (intent.resolveActivity(context.getPackageManager()) != null) {
+//                    context.startActivity(intent);
+//                } else {
+//                    // Handle case where no app can handle the intent
+//                    Toast.makeText(context, "No app available", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }

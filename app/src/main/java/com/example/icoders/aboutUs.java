@@ -23,7 +23,7 @@ public class aboutUs extends AppCompatActivity {
 
     private void addData()
     {
-        arrProfile.add(new profileModel(R.mipmap.souravjanaface, "Sourav Jana", "President", "https://www.linkedin.com/in/sourav-jana15"));
+        arrProfile.add(new profileModel(R.mipmap.souravjanaface, "Sourav Jana", "President", "https://linkedin.com/in/sourav-jana15/"));
         arrProfile.add(new profileModel(R.mipmap.ranganmukherjeeface, "Rangan Mukherjee", "Secretary", "https://www.linkedin.com/in/rangan-mukherjee-682771201/"));
         arrProfile.add(new profileModel(R.mipmap.sanskarkeshriface, "Sanskar Keshri", "Event Manager", "https://www.linkedin.com/in/sanskar-keshri-3700b120b/"));
         arrProfile.add(new profileModel(R.mipmap.rahulsinhaface, "Rahul Sinha", "Treasurer", "https://www.linkedin.com/in/rahul-sinha-b402111b7/"));
