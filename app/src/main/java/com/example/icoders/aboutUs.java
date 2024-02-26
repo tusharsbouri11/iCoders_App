@@ -23,13 +23,13 @@ public class aboutUs extends AppCompatActivity {
 
     private void addData()
     {
-        arrProfile.add(new profileModel(R.mipmap.souravjanaface, "Sourav Jana", "President"));
-        arrProfile.add(new profileModel(R.mipmap.ranganmukherjeeface, "Rangan Mukherjee", "Secretary"));
-        arrProfile.add(new profileModel(R.mipmap.sanskarkeshriface, "Sanskar Keshri", "Event Manager"));
-        arrProfile.add(new profileModel(R.mipmap.rahulsinhaface, "Rahul Sinha", "Treasurer"));
-        arrProfile.add(new profileModel(R.mipmap.abhishekface, "Abhishek Dasgupta", "Startup Coordinator"));
-        arrProfile.add(new profileModel(R.mipmap.dollykumariface, "Dolly Kumari", "Project Coordinator"));
-        arrProfile.add(new profileModel(R.mipmap.subhojitgoraiface, "Subhojit Gorai", "PR Manager"));
+        arrProfile.add(new profileModel(R.mipmap.souravjanaface, "Sourav Jana", "President", "https://www.linkedin.com/in/sourav-jana15"));
+        arrProfile.add(new profileModel(R.mipmap.ranganmukherjeeface, "Rangan Mukherjee", "Secretary", "https://www.linkedin.com/in/rangan-mukherjee-682771201/"));
+        arrProfile.add(new profileModel(R.mipmap.sanskarkeshriface, "Sanskar Keshri", "Event Manager", "https://www.linkedin.com/in/sanskar-keshri-3700b120b/"));
+        arrProfile.add(new profileModel(R.mipmap.rahulsinhaface, "Rahul Sinha", "Treasurer", "https://www.linkedin.com/in/rahul-sinha-b402111b7/"));
+        arrProfile.add(new profileModel(R.mipmap.abhishekface, "Abhishek Dasgupta", "Startup Coordinator", "https://www.linkedin.com/in/abhishek-dasgupta-819211147"));
+        arrProfile.add(new profileModel(R.mipmap.dollykumariface, "Dolly Kumari", "Project Coordinator", "https://www.linkedin.com/in/dollykumari9798/"));
+        arrProfile.add(new profileModel(R.mipmap.subhojitgoraiface, "Subhojit Gorai", "PR Manager", "https://www.linkedin.com/in/subhajit-gorai/"));
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)

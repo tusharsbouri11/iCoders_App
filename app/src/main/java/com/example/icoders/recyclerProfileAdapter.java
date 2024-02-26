@@ -1,11 +1,15 @@
 package com.example.icoders;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,6 +39,21 @@ public class recyclerProfileAdapter extends RecyclerView.Adapter<recyclerProfile
         holder.img.setImageResource(arrProfile.get(position).getImg());
         holder.name.setText(arrProfile.get(position).getName());
         holder.desig.setText(arrProfile.get(position).getDesig());
+
+        holder.link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri= Uri.parse(arrProfile.get(position).getLink());
+//                context.startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                Intent intent=new Intent(Intent.ACTION_VIEW, uri);
+                if (intent.resolveActivity(context.getPackageManager()) != null) {
+                    context.startActivity(intent);
+                } else {
+                    // Handle case where no app can handle the intent
+                    Toast.makeText(context, "No app available", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     @Override
@@ -45,7 +64,7 @@ public class recyclerProfileAdapter extends RecyclerView.Adapter<recyclerProfile
     public class ViewHolder extends RecyclerView.ViewHolder
     {
         ImageView img;
-        TextView name, desig;
+        TextView name, desig, link;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -53,6 +72,7 @@ public class recyclerProfileAdapter extends RecyclerView.Adapter<recyclerProfile
             img=itemView.findViewById(R.id.img);
             name=itemView.findViewById(R.id.name);
             desig=itemView.findViewById(R.id.desig);
+            link=itemView.findViewById(R.id.link);
         }
     }
 
